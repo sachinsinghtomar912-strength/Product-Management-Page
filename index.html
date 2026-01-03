@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+
+        <!-- Controls -->
+        <div class="controls">
+            <input id="search" placeholder="Search by name...">
+            <button id="toggleView">Switch to Card View</button>
+            <button id="addProductionBtn">Add Product</button>
+        </div>
+
+        <!-- Product Display -->
+         <div id="productContainer"></div>
+
+         <!-- Pagination -->
+          <div id="pagination"></div>
+
+    </div>
+
+    <!-- Add/Edit Form Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modalTitle">Add Product</h2>
+            <form id="productForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="price" placeholder="Price" required>
+                <input type="text" id="category" placeholder="Category" required>
+                <input type="number" id="stock" placeholder="Stock">
+                <textarea id="description" placeholder="Description"></textarea>
+                <div class="actions">
+                    <button type="submit">Save</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
